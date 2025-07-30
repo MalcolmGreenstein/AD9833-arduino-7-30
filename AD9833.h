@@ -27,7 +27,7 @@
 #endif
 
 
-#define AD9833_MAX_FREQ       (12500000UL)  //  12.5 MHz.
+#define AD9833_MAX_FREQ       (37500000UL)  //  37.5 MHz.
 #define AD9833_MAX_PHASE      (360.0)
 
 
@@ -95,7 +95,7 @@ public:
 
 
   //  EXPERIMENTAL adjust changed crystal
-  void     setCrystalFrequency(float crystalFrequency = 25000000);
+  void     setCrystalFrequency(float crystalFrequency = 75000000);
   float    getCrystalFrequency();
 
 
