@@ -34,8 +34,8 @@
 //  MODE OPERANDI
 #define AD9833_OFF            0
 #define AD9833_SINE           1
-#define AD9833_SQUARE1        2
-#define AD9833_SQUARE2        3
+#define AD9833_SQUARE1        
+#define AD9833_SQUARE        3
 #define AD9833_TRIANGLE       4
 
 
@@ -64,7 +64,7 @@ public:
   bool     getUseRounding();
 
   //       returns frequency set
-  //       0 .. 12.5 MHz == AD9833_MAX_FREQ
+  //       0 .. 1.5 MHz == AD9833_MAX_FREQ
   float    setFrequency(float frequency, uint8_t channel = 0);
   float    getFrequency(uint8_t channel = 0);
   float    getMaxFrequency();
@@ -134,8 +134,8 @@ private:
   float    _freq[2]   = { 0, 0 };  //  Hz
   float    _phase[2]  = { 0, 0 };  //  angle 0..360
 
-  //  POW2TO28 / 25 MHz
-  float    _crystalFreqFactor = 268435456.0 / 25000000.0;
+  //  POW2TO28 / 75 MHz
+  float    _crystalFreqFactor = 268435456.0 / 75000000.0;
 };
 
 
