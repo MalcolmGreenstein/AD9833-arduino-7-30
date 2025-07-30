@@ -34,8 +34,8 @@
 //  MODE OPERANDI
 #define AD9833_OFF            0
 #define AD9833_SINE           1
-#define AD9833_SQUARE1        
-#define AD9833_SQUARE        3
+#define AD9833_SQUARE1        2
+#define AD9833_SQUARE2        3
 #define AD9833_TRIANGLE       4
 
 
